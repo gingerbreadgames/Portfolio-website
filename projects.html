@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Academic Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+
+        .name-title {
+            font-size: 1.5rem;
+            color: #333;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #2196F3;
+        }
+        
+        body {
+            background-color: #ffffff;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+            border: 1px solid #e9ecef;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #2196F3;
+            margin-bottom: 1rem;
+        }
+
+        .project-description {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features {
+            margin-bottom: 1.5rem;
+        }
+
+        .key-features h4 {
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .key-features ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .key-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .key-features li::before {
+            content: "•";
+            color: #2196F3;
+            position: absolute;
+            left: 0;
+        }
+
+        .skills-section {
+            margin-top: 1.5rem;
+        }
+
+        .skills-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .skill-tag {
+            background: #e3f2fd;
+            color: #1976d2;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        .project-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-title-group {
+            flex-grow: 1;
+        }
+
+        .project-timeline {
+            font-size: 0.9rem;
+            color: #1976d2;
+            background: #e3f2fd;
+            padding: 0.4rem 0.8rem;
+            border-radius: 4px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+
+            .project-card {
+                padding: 1.5rem;
+            }
+
+            .project-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <a href=" " class="name-title"> </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="files/ReidLayne_Resume (7).pdf" target="_blank">CV</a>
+            </div>
+        </nav>
+
+        <h2>Projects</h2>
+        
+        <!-- Initiative Tracker -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Initiative Tracker</h3>
+                </div>
+                <span class="project-timeline">Jan 2025 - Jan 2025</span>
+            </div>
+            <div class="project-description">
+                <p>A platform for tracker turn based combat in a table-top rpg.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>Sort function that automatically sorts all user input numbers in descending order</li>
+                    <li>Turn tracking and turn navigating system</li>
+                    <li>Death tracking system</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">Sorting Algorithms</span>
+                    <span class="skill-tag">Git</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wanted Poster Generator -->
+        <div class="project-card">
+            <div class="project-header">
+                <div class="project-title-group">
+                    <h3 class="project-title">Wanted Poster Generator</h3>
+                </div>
+                <span class="project-timeline">Sep 2024 - Sep 2024</span>
+            </div>
+            <div class="project-description">
+                <p>Web application that took user inputted images and created a unique wanted poster, made for HACKWesTX hackathon.</p>
+            </div>
+            <div class="key-features">
+                <h4>Key Features</h4>
+                <ul>
+                    <li>HTML image input</li>
+                    <li>Sepia filter added to image</li>
+                    <li>100 possible bounties and crimes </li>
+                    <li>Outputted image to wep page and gave user a download link</li>
+                </ul>
+            </div>
+            <div class="skills-section">
+                <h4>Technologies & Skills</h4>
+                <div class="skills-grid">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Pillows</span>
+                    <span class="skill-tag">Flask</span>
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
